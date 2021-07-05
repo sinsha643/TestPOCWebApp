@@ -22,11 +22,8 @@ namespace TestPOCWebApp.Controllers
             new UserDetail{ UserId = "5", FirstName ="Rachel", LastName="Green",Role="Actress",Location="New York",IsActive=false}
         };
 
-        private readonly ILogger<UserController> _logger;
-
-        public UserController(ILogger<UserController> logger)
+        public UserController()
         {
-            _logger = logger;
         }
 
         [HttpGet]
